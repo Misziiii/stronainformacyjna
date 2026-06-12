@@ -40,6 +40,7 @@ nav a:hover {
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
     nav {
+        border-radius: 20px; /* Zaokrąglamy bardziej na telefonie */
         top: 10px; /* Zmniejszamy górny margines na telefonie */
         width: 85vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
         font-size: clamp(0.75rem, 1.5vw, 1rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
@@ -51,7 +52,7 @@ nav ul {
     align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
     gap: 8px;              /* Mniejsze odstępy na mniejszym ekranie */
     padding: 10px;             /* Mniejsze paddingi dla lepszego dopasowania */
-    
+
 }
 
 }
