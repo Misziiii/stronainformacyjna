@@ -42,7 +42,7 @@ nav a:hover {
     nav {
         top: 10px; /* Zmniejszamy górny margines na telefonie */
         width: 85vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
-        font-size: clamp(0.875rem, 2vw, 1rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
+        font-size: clamp(0.75rem, 1.5vw, 1rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
 
         
 }
