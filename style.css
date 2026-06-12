@@ -7,7 +7,7 @@ body {
     background-size: 50px 50px;;
 }
 nav {
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 1.25rem);
     border: 1px solid #5c5c5c;
     background: linear-gradient(120deg, #333, #5c5c5c, #333);
     padding: 10px 20px;
@@ -33,7 +33,7 @@ nav a {
     color: #cecdcd;
     text-decoration: none;
     margin: 0 15px;
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 1.25rem);
 }
 nav a:hover {
     color: #fff;
