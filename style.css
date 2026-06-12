@@ -7,7 +7,7 @@ body {
     background-size: 50px 50px;;
 }
 nav {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     border: 1px solid #5c5c5c;
     background: linear-gradient(120deg, #333, #5c5c5c, #333);
     padding: 10px 20px;
@@ -105,6 +105,7 @@ h1 {
     transform: translateX(-50%);
 }
 .stack {
+    align-items: center;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
     gap: 50px;
