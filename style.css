@@ -41,7 +41,8 @@ nav a:hover {
 @media (max-width: 768px) {
     nav {
         width: 90vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
-
+        font-size: clamp(1rem, 2.5vw, 1.25rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
+        
         
 }
 nav ul {
@@ -51,19 +52,6 @@ nav ul {
     padding: 10px 0;
 }
 
-    .nav-list {
-        justify-content: center; /* Nadal chcemy, żeby linki były wyśrodkowane */
-        flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
-        align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
-        gap: 15px;              /* Mniejsze odstępy na mniejszym ekranie */
-        padding: 10px 0;
-    }
-    
-    .navbar {
-        /* Na telefonie możemy chcieć, żeby navbar zajął całą szerokość bez marginesów */
-        width: 100%; 
-        position: static; /* Jeśli na komputerze miałeś 'fixed', na telefonie czasem lepiej to wyłączyć */
-    }
 }
 header {
     position: relative;
