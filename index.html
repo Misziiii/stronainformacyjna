@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Stack+Sans-Headline:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Michał - tworzenie stron internetowych. Projektuję i programuję strony wizytówki oraz bardziej złożone projekty dostosowane do potrzeb klienta.">
+    <title>Michal Trzebunia strona informacyjna</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-</style>
 </head>
 <body>
 
@@ -39,11 +35,11 @@
 <section id="stack-container" class="animate">
 <h2 >Stack technologiczny</h2>
 <div class="stack">
-    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></div>
-    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></div>
-    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></div>
-    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /></div>
-    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" /></div>
+    <div class="stack-item"><div class="stack-img-wrapper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"/><div class="stack-caption">HTML5</div></div></div>
+    <div class="stack-item"><div class="stack-img-wrapper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"/><div class="stack-caption">CSS3</div></div></div>
+    <div class="stack-item"><div class="stack-img-wrapper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/><div class="stack-caption">JavaScript</div></div></div>
+    <div class="stack-item"><div class="stack-img-wrapper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/><div class="stack-caption">PHP</div></div></div>
+    <div class="stack-item"><div class="stack-img-wrapper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/><div class="stack-caption">MySQL</div></div></div>
 </div>
 </section><br>
 <footer id="contact">
@@ -55,7 +51,7 @@
     <p>Copyright © 2026 Michał. Wszelkie prawa zastrzeżone.</p>
 </footer>
 </body>
-</html>
+
 
 
 <script>
@@ -75,8 +71,6 @@ document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 document.querySelectorAll('.animateleft').forEach(el => observer.observe(el));
 
 
-</script>
-<script>
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.nav-list');
 
@@ -92,3 +86,5 @@ document.querySelectorAll('.animateleft').forEach(el => observer.observe(el));
         }
     });
 </script>
+
+</html>
