@@ -42,7 +42,7 @@ nav a:hover {
     nav {
         width: 90vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
         font-size: clamp(1rem, 2.5vw, 1.25rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
-        
+
         
 }
 nav ul {
@@ -104,6 +104,7 @@ h1 {
     transform: translateX(-50%);
 }
 .stack {
+    text-align: center;
     align-items: center;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
