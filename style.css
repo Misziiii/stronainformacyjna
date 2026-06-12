@@ -40,7 +40,8 @@ nav a:hover {
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
     nav {
-        width: 90vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
+        top: 10px; /* Zmniejszamy górny margines na telefonie */
+        width: 85vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
         font-size: clamp(1rem, 2.5vw, 1.25rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
 
         
@@ -104,6 +105,7 @@ h1 {
     transform: translateX(-50%);
 }
 .stack {
+    justify-content: center;
     display:grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
