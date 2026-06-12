@@ -39,6 +39,10 @@ nav a:hover {
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
+    nav {
+        width: 90%; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
+        
+}
     .nav-list {
         justify-content: center; /* Nadal chcemy, żeby linki były wyśrodkowane */
         flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
