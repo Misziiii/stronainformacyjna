@@ -1,0 +1,165 @@
+
+body {
+    font-family: 'Inter', sans-serif; 
+    background-color: #252525;
+    color: #cecdcd;
+    background-image: radial-gradient(#5c5c5c 1px, transparent 1px), radial-gradient(#5c5c5c 1px, transparent 1px);
+    background-size: 50px 50px;;
+}
+nav {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #333, #5c5c5c, #333);
+    padding: 10px 20px;
+    z-index: 1000;
+    border-radius: 100px;
+    position: fixed;
+    top: 20px;
+    width: 30vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+}
+nav li {
+    max-width: 10vw;
+}
+nav a {
+    color: #cecdcd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+nav a:hover {
+    color: #fff;
+}
+
+/* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
+        align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
+        gap: 15px;              /* Mniejsze odstępy na mniejszym ekranie */
+        padding: 10px 0;
+    }
+    
+    .navbar {
+        /* Na telefonie możemy chcieć, żeby navbar zajął całą szerokość bez marginesów */
+        width: 100%; 
+        position: static; /* Jeśli na komputerze miałeś 'fixed', na telefonie czasem lepiej to wyłączyć */
+    }
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.default-container {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    padding: 20px;
+    border-radius: 20px;
+}
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 800px;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+#aboutme {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#aboutme-container {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    padding: 20px;
+    border-radius: 20px;
+}
+#stack-container {
+    position: relative;
+    text-align: center;
+    width: 65vw;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.stack {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    gap: 50px;
+}
+.stack-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #5c5c5c;
+    margin-top: 50px;
+    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    border-radius: 20px;
+}
+footer p {
+    text-align: left;
+    color: #cecdcd;
+    font-size: 0.9rem;
+    border: none;
+    background: none;
+}
+.footercontainer {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    padding: 20px;
+    border-radius: 20px;
+    width: 65vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Elements start hidden/offset */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Triggered when element scrolls into view */
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animateleft {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1.25s ease, transform 1.25s ease;
+}
+
+/* Triggered when element scrolls into view */
+.animateleft.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

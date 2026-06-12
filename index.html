@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans-Headline:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+</style>
+</head>
+<body>
+
+<nav class="animatednav">
+    <ul class="nav-list">
+        <li><a href="#start">Strona główna</a></li>
+        <li><a href="#aboutme">O mnie</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</nav>
+
+<header id="start" class="animate">
+    <div class="default-container">
+    <h1>Zajmuję się tworzeniem stron internetowych, przygotowywuję projekty dostosowane do potrzeb klientów, od stron wizytowych po bardziej złożone projekty</h1>
+    </div>
+</header>
+<section id="aboutme">
+<div id="aboutme-container" class="animateleft">
+    <h2>Nazywam się Michał</h2>
+    <p>Jestem pasjonatem tworzenia stron internetowych, z doświadczeniem w projektowaniu i programowaniu. Moim celem jest dostarczanie wysokiej jakości rozwiązań, które spełniają oczekiwania klientów i pomagają im osiągnąć sukces online.</p>   
+</div>
+</section><br>
+<section id="stack-container" class="animate">
+<h2 >Stack technologiczny</h2>
+<div class="stack">
+    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></div>
+    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></div>
+    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></div>
+    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /></div>
+    <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" /></div>
+</div>
+</section><br>
+<footer id="contact">
+    <div class="footer-container">
+    <h2>Kontakt</h2>
+    <h4>Email: <a href="mailto:michal273t@gmail.com">michal273t@gmail.com</a></h4>
+    <h4>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></h4>
+    </div>
+    <p>Copyright © 2026 Michał. Wszelkie prawa zastrzeżone.</p>
+</footer>
+</body>
+</html>
+
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // animate only once
+    }
+  });
+}, {
+  threshold: 0.25 // trigger when 15% of element is visible
+});
+
+// Observe all elements with the .animate class
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+document.querySelectorAll('.animateleft').forEach(el => observer.observe(el));
+
+
+</script>
