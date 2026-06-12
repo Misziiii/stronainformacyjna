@@ -49,8 +49,9 @@ nav a:hover {
 nav ul {
     flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
     align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
-    gap: 15px;              /* Mniejsze odstępy na mniejszym ekranie */
-    padding: 10px 0;
+    gap: 8px;              /* Mniejsze odstępy na mniejszym ekranie */
+    padding: 10px;             /* Mniejsze paddingi dla lepszego dopasowania */
+    
 }
 
 }
