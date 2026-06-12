@@ -44,6 +44,9 @@ nav a:hover {
     font-size: 28px;
     cursor: pointer;
 }
+button.hamburger {
+    display: none !important;
+}
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
@@ -61,6 +64,9 @@ nav a:hover {
     .hamburger {
         display: block;
         z-index: 1001; /* Żeby był zawsze nad wysuwanym menu */
+    }
+    button.hamburger {
+        display: block; /* Na telefonie ma się pokazać! */
     }
 
     /* Chujemy listę linków poza ekranem */
