@@ -116,6 +116,9 @@ h1 {
 }
 .stack-item {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     gap: 10px;
     border-radius: 10px;
 }
