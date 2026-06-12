@@ -40,7 +40,7 @@ nav a:hover {
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
     nav {
-        width: 90%; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
+        width: 90vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
         
 }
     .nav-list {
