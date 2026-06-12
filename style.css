@@ -104,9 +104,9 @@ h1 {
     transform: translateX(-50%);
 }
 .stack {
-    align-items: center;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
 }
 .stack-item:hover {
