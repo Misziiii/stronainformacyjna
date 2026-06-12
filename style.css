@@ -49,10 +49,8 @@ button.hamburger {
 }
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
+/* --- STYLE DLA TELEFONU (Poniżej 768px) --- */
 @media (max-width: 768px) {
-    nav {
-        display: none; /* Ukrywamy standardowe menu na telefonie */
-    }
     .navbar {
         width: 100%;
         max-width: 100%;
@@ -66,11 +64,7 @@ button.hamburger {
     /* Pokazujemy hamburgera na telefonie */
     .hamburger {
         display: block;
-          font-size: 28px;
         z-index: 1001; /* Żeby był zawsze nad wysuwanym menu */
-    }
-    button.hamburger {
-        display: block; /* Na telefonie ma się pokazać! */
     }
 
     /* Chujemy listę linków poza ekranem */
