@@ -36,25 +36,54 @@ nav a {
 nav a:hover {
     color: #fff;
 }
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
-    nav {
-        border-radius: 20px; /* Zaokrąglamy bardziej na telefonie */
-        top: 10px; /* Zmniejszamy górny margines na telefonie */
-        width: 85vw; /* Na telefonie chcemy, żeby navbar zajmował więcej miejsca */
-        font-size: clamp(0.75rem, 1.5vw, 1rem); /* Dostosowujemy rozmiar czcionki do mniejszego ekranu */
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        border-radius: 0; /* Na telefonie pełna szerokość u góry */
+        display: flex;
+        justify-content: flex-end; /* Przycisk ląduje po prawej stronie */
+        padding: 15px;
+    }
 
-        
-}
-nav ul {
-    flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
-    align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
-    gap: 8px;              /* Mniejsze odstępy na mniejszym ekranie */
-    padding: 10px;             /* Mniejsze paddingi dla lepszego dopasowania */
+    /* Pokazujemy hamburgera na telefonie */
+    .hamburger {
+        display: block;
+        z-index: 1001; /* Żeby był zawsze nad wysuwanym menu */
+    }
 
-}
+    /* Chujemy listę linków poza ekranem */
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Chowa menu całkowicie za prawą krawędź ekranu */
+        width: 70%; /* Menu zajmie 70% szerokości ekranu telefonu */
+        height: 100vh;
+        background: #222;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        gap: 25px;
+        text-align: center;
+        transition: right 0.4s ease; /* Płynne wysuwanie z boku! */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    }
 
+    /* MAGICZNA KLASA: Gdy JS doda tę klasę, menu się wysunie */
+    .nav-list.active {
+        right: 0; /* Wsuwa menu z powrotem na ekran */
+    }
 }
 header {
     position: relative;
