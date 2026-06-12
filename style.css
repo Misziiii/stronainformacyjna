@@ -104,11 +104,10 @@ h1 {
     transform: translateX(-50%);
 }
 .stack {
-    text-align: center;
     align-items: center;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-    gap: 50px;
+    gap: clamp(20px, 2vw, 50px);
 }
 .stack-item:hover {
     transform: scale(1.05);
