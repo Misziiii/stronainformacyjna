@@ -50,8 +50,11 @@ button.hamburger {
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
+    nav {
+        display: none; /* Ukrywamy standardowe menu na telefonie */
+    }
     .navbar {
-        width: 25vw;
+        width: 100%;
         max-width: 100%;
         top: 0;
         border-radius: 0; /* Na telefonie pełna szerokość u góry */
