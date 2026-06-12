@@ -6,8 +6,8 @@ body {
     background-image: radial-gradient(#5c5c5c 1px, transparent 1px), radial-gradient(#5c5c5c 1px, transparent 1px);
     background-size: 50px 50px;;
 }
-nav {
-    font-size: clamp(1.25rem, 1.5vw, 1.25rem);
+.navbar {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     border: 1px solid #5c5c5c;
     background: linear-gradient(120deg, #333, #5c5c5c, #333);
     padding: 10px 20px;
@@ -31,25 +31,21 @@ nav a {
     color: #cecdcd;
     text-decoration: none;
     margin: 0 15px;
-    font-size: clamp(1.25rem, 1.5vw, 1.25rem);
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 }
 nav a:hover {
     color: #fff;
 }
 .hamburger {
-    display: none;
+    display: none; /* Ukrywamy hamburgera na większych ekranach */
+    font-size: 1.5rem;
     background: none;
     border: none;
-    color: white;
-    font-size: 0px;
+    color: #cecdcd;
     cursor: pointer;
-}
-button.hamburger {
-    display: none !important;
 }
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
-/* --- STYLE DLA TELEFONU (Poniżej 768px) --- */
 @media (max-width: 768px) {
     .navbar {
         width: 100%;
@@ -162,7 +158,6 @@ h1 {
     border-radius: 10px;
      transition: transform 0.3s ease;
 }
-
 footer {
     margin-top: 40px;
     text-align: center;
