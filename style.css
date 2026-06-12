@@ -40,6 +40,7 @@ nav a:hover {
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
     .nav-list {
+        justify-content: center; /* Nadal chcemy, żeby linki były wyśrodkowane */
         flex-direction: column; /* Zmieniamy układ z poziomego na pionowy! */
         align-items: center;    /* Centruje linki w pionie na ekranie telefonu */
         gap: 15px;              /* Mniejsze odstępy na mniejszym ekranie */
