@@ -51,7 +51,7 @@ button.hamburger {
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
 @media (max-width: 768px) {
     .navbar {
-        width: 100%;
+        width: 25vw;
         max-width: 100%;
         top: 0;
         border-radius: 0; /* Na telefonie pełna szerokość u góry */
@@ -63,6 +63,7 @@ button.hamburger {
     /* Pokazujemy hamburgera na telefonie */
     .hamburger {
         display: block;
+          font-size: 28px;
         z-index: 1001; /* Żeby był zawsze nad wysuwanym menu */
     }
     button.hamburger {
