@@ -21,7 +21,7 @@ body {
     border-radius: 100px;
     position: fixed;
     top: 20px;
-    width: 25vw;
+    width: 30vw;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -52,8 +52,9 @@ nav a:hover {
 }
 
 /* --- STYLE DLA TELEFONU (Magia Media Queries) --- */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .navbar {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         width: 100%;
         max-width: 100%;
         top: 0;
@@ -62,7 +63,9 @@ nav a:hover {
         justify-content: flex-end; /* Przycisk ląduje po prawej stronie */
         padding: 15px;
     }
-
+    .navbar a {
+        font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+    }
     /* Pokazujemy hamburgera na telefonie */
     .hamburger {
         display: block;
