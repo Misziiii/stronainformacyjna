@@ -97,8 +97,6 @@ header {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    border-width: 100%;
-    border-bottom: 1px solid #5c5c5c;
 }
 
 .default-container {
@@ -248,7 +246,7 @@ footer a {
 
 /* From Uiverse.io by risabbir */ 
 .headercontainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
