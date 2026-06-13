@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-#start, #aboutme, #stack-container, #contact {
-    scroll-margin-top: 80px;
-}
+
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Inter', sans-serif; 
-    background-color: #252525;
+    background-color: #161616;
     color: #cecdcd;
-    background-image: radial-gradient(#5c5c5c 1px, transparent 1px), radial-gradient(#5c5c5c 1px, transparent 1px);
-    background-size: 50px 50px;;
+    
 }
 .navbar {
     font-size: clamp(0.75rem, 1vw, 1rem);
     border: 1px solid #5c5c5c;
-    background: linear-gradient(120deg, #333, #5c5c5c, #333);
+    background: linear-gradient(120deg, #141414, #2b2a2a, #141414);
     z-index: 1000;
     border-radius: 100px;
     position: fixed;
@@ -97,12 +94,15 @@ header {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    border-width: 100%;
+    border-bottom: 1px solid #5c5c5c;
 }
+
 .default-container {
     position: relative;
     z-index: 1;
     border: 1px solid #5c5c5c;
-    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    background: linear-gradient(120deg, #141414, #2b2a2a, #141414);
     padding: 20px;
     border-radius: 20px;
 }
@@ -113,6 +113,7 @@ h1 {
     font-size: clamp(1.75rem, 3vw, 2.25rem);
 }
 #aboutme {
+    height: 50vh;
     font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     display: flex;
     align-items: center;
@@ -124,7 +125,7 @@ h1 {
     position: relative;
     z-index: 1;
     border: 1px solid #5c5c5c;
-    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    background: linear-gradient(120deg, #141414, #2b2a2a, #141414);
     padding: 20px;
     border-radius: 20px;
 }
@@ -135,7 +136,7 @@ h1 {
     width: 65vw;
     z-index: 1;
     border: 1px solid #5c5c5c;
-    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    background: linear-gradient(120deg, #141414, #2b2a2a, #141414);
     padding: 20px;
     border-radius: 20px;
     left: 50%;
@@ -167,8 +168,8 @@ footer {
     margin-top: 40px;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #5c5c5c;
-    background: linear-gradient(120deg, #333, #4d4c4c, #333);
+    border: 1px solid #5c5c5c;
+    background: linear-gradient(120deg, #141414, #2b2a2a, #141414);
     border-radius: 20px;
 }
 footer p {
@@ -177,6 +178,12 @@ footer p {
     font-size: 0.9rem;
     border: none;
     background: none;
+}
+footer a {
+    color: #cecdcd;
+    text-decoration: none;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* Elements start hidden/offset */
@@ -233,4 +240,118 @@ footer p {
 
 .stack-img-wrapper:hover .stack-caption {
     opacity: 1;
+}
+
+
+/* From Uiverse.io by risabbir */ 
+.headercontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      ellipse at 20% 30%,
+      rgba(138, 43, 226, 0.8) 0%,
+      rgba(138, 43, 226, 0) 60%
+    ),
+    radial-gradient(
+      ellipse at 80% 50%,
+      rgba(0, 191, 255, 0.7) 0%,
+      rgba(0, 191, 255, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at 50% 80%,
+      rgba(28, 171, 253, 0.6) 0%,
+      rgba(50, 205, 50, 0) 65%
+    ),
+    linear-gradient(135deg, #000000 0%, #0a0520 100%);
+  background-blend-mode: overlay, screen, hard-light;
+  overflow: hidden;
+  animation: aurora-drift 25s infinite alternate ease-in-out;
+}
+
+.headercontainer::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+  animation: grid-shift 20s linear infinite;
+}
+
+.headercontainer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    transparent 70%,
+    rgba(10, 5, 32, 0.9) 100%
+  );
+  animation: aurora-pulse 8s infinite alternate;
+}
+
+@keyframes aurora-drift {
+  0% {
+    background-position:
+      0% 0%,
+      0% 0%,
+      0% 0%;
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  50% {
+    background-position:
+      -10% -5%,
+      5% 10%,
+      0% 15%;
+    filter: hue-rotate(30deg) brightness(1.2);
+  }
+  100% {
+    background-position:
+      5% 10%,
+      -10% -5%,
+      15% 0%;
+    filter: hue-rotate(60deg) brightness(1);
+  }
+}
+
+@keyframes grid-shift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes aurora-pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
 }
